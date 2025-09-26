@@ -1,8 +1,8 @@
 const mineflayer = require("mineflayer");
 
 const bot = mineflayer.createBot({
-  host: "yourserver.aternos.me", // change to your Aternos server address
-  port: 25565,                   // usually 25565
+  host: "pheinsserver.falixsrv.me", // change to your Aternos server address
+  port: 29510,                   // usually 25565
   username: "AFK_BOT"            // use an alt account name
   // password: "yourpassword"     // only if premium account
 });
@@ -70,7 +70,7 @@ function chatLoop() {
   setInterval(() => {
     const msg = messages[Math.floor(Math.random() * messages.length)];
     bot.chat(msg);
-  }, 5 * 60 * 1000); // every 5 minutes
+  },   90 * 1000); // every 5 minutes
 }
 
 // --- Movement loop ---

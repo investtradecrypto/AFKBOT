@@ -70,7 +70,7 @@ function chatLoop() {
   setInterval(() => {
     const msg = messages[Math.floor(Math.random() * messages.length)];
     bot.chat(msg);
-  },   90 * 1000); // every 5 minutes
+  },   5 * 60 * 1000); // every 5 minutes
 }
 
 // --- Movement loop ---
